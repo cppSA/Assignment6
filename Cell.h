@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+class Cell{
+private:
+    char value;
+
+public:
+    //Empty constructor.
+    Cell();
+
+    //Function that sets value in Cell object.
+    bool setValue(const char& c);
+
+    //Function that gets value from Cell object.
+    const char getValue();
+
+    //Operator '=' overloading for Cell class. If the char given is not 'X' or 'O' - an exception is thrown.
+    Cell& operator=(char c);
+
+    // //Overloading operator '=' for Cell class. Returns the char in a certain cell.
+    // char operator=(Cell& c);
+
+    //----------------------------------
+    // friend global IO operators
+    //----------------------------------
+    friend ostream& operator<< (ostream& os, Cell& c);
+    // friend char(Cell& c);
+};
+
+//----------------------------------------
+// friend global IO operators
+//----------------------------------------
+
+//Operator '<<' overloading for Cell class.
+ostream& operator<< (ostream& os, Cell& c);
+
+// //Overloading operator '=' for Cell class. Returns the char in a certain cell.
+// char(Cell& c){
+//     return c.getValue();
+// }
+
