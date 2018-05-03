@@ -1,3 +1,9 @@
+/**
+*hidden file of classes IllegalCharException and IllegalCoordinateException
+*Authors Alexey Titov and Shir Bentabou
+*Version 1.0
+**/
+//library
 #include <exception>
 using namespace std;
 

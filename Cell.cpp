@@ -1,3 +1,9 @@
+/**
+*cpp file of class Cell
+*Authors Alexey Titov and Shir Bentabou
+*Version 1.0
+**/
+//library
 #include "Board.h"
 //Empty constructor.
 Cell::Cell(){}

@@ -1,3 +1,9 @@
+/**
+*cpp file of classes IllegalCharException and IllegalCoordinateException
+*Authors Alexey Titov and Shir Bentabou
+*Version 1.0
+**/
+//library
 #include "Board.h"
 
 //Function for exception throwing, returns the value in ch.

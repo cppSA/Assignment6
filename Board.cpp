@@ -1,3 +1,9 @@
+/**
+*cpp file of class Board
+*Authors Alexey Titov and Shir Bentabou
+*Version 1.0
+**/
+//library
 #include "Board.h"
 
 //Constructor that receives an int that defines the board size wanted

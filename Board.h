@@ -1,3 +1,9 @@
+/**
+*hidden file of class Board
+*Authors Alexey Titov and Shir Bentabou
+*Version 1.0
+**/
+//libraries
 #include <iostream>
 #include <string>
 #include <list>

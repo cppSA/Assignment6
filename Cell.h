@@ -1,3 +1,9 @@
+/**
+*hidden file of class Cell
+*Authors Alexey Titov and Shir Bentabou
+*Version 1.0
+**/
+//library
 #include <iostream>
 using namespace std;
 
