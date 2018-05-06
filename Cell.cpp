@@ -9,7 +9,7 @@
 Cell::Cell(){}
 
 //Function that sets value in Cell object.
-bool Cell::setValue(const char& c){
+void Cell::setValue(const char& c){
     this->value=c;
 }
 

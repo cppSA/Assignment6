@@ -16,7 +16,7 @@ public:
     Cell();
 
     //Function that sets value in Cell object.
-    bool setValue(const char& c);
+    void setValue(const char& c);
 
     //Function that gets value from Cell object.
     const char getValue();

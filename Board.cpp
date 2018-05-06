@@ -54,7 +54,7 @@ Cell& Board::operator[](list<int> lst){
         return this->board[r][c];
     }
     else{
-        IllegalCoordinateException ce{r,c};
+        IllegalCoordinateException ce(r,c);
         throw ce;
     }
 }
@@ -67,6 +67,7 @@ Board& Board::operator=(char c){
                 this->board[i][j].setValue(c);
             }
         }
+	return *this;
     }
     else{
         IllegalCharException ce;
@@ -88,6 +89,7 @@ Board& Board::operator=(Board& copy){
             this->board[i][j]=copy.board[i][j];
         }
     }
+    return *this; 
 }
 
 
