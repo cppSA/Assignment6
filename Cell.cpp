@@ -31,6 +31,10 @@ Cell& Cell::operator=(char c){
     }
 }
 
+//operator casting from Cell to char
+Cell::operator char() const{
+    return this->value;
+}
     
 // //Overloading operator '=' for Cell class. Returns the char in a certain cell.
 // char char::operator=(Cell& c){

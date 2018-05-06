@@ -24,8 +24,8 @@ public:
     //Operator '=' overloading for Cell class. If the char given is not 'X' or 'O' - an exception is thrown.
     Cell& operator=(char c);
 
-    // //Overloading operator '=' for Cell class. Returns the char in a certain cell.
-    // char operator=(Cell& c);
+    //operator casting from Cell to char
+    operator char() const;
 
     //----------------------------------
     // friend global IO operators
