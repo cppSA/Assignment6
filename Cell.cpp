@@ -38,7 +38,7 @@ Cell::operator char() const{
 
 //Operator '==' overloading for Cell class.
 int Cell::operator==(char y) const{
-    int x=this->getValue()==y;
+    int x=this->value==y;
     return x;
 }
 
