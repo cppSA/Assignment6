@@ -27,14 +27,10 @@ public:
     //operator casting from Cell to char
     operator char() const;
 
-    //Operator '==' overloading for Cell class.
-    int operator==(char y) const;
-
     //----------------------------------
     // friend global IO operators
     //----------------------------------
     friend ostream& operator<< (ostream& os, Cell& c);
-    // friend char(Cell& c);
 };
 
 //----------------------------------------

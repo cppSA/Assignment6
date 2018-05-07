@@ -20,7 +20,7 @@ const char Cell::getValue(){
 
 //Operator '=' overloading for Cell class. If the char given is not 'X' or 'O' - an exception is thrown.
 Cell& Cell::operator=(char c){
-    if (c=='X' || c=='O'){
+    if (c=='X' || c=='O' || c=='.'){
         this->value=c;
         return *this;
     }
@@ -34,12 +34,6 @@ Cell& Cell::operator=(char c){
 //Operator casting from Cell to char
 Cell::operator char() const{
     return this->value;
-}
-
-//Operator '==' overloading for Cell class.
-int Cell::operator==(char y) const{
-    int x=this->value==y;
-    return x;
 }
 
 //Operator '<<' overloading for Cell class.
