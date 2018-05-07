@@ -27,6 +27,9 @@ public:
     //operator casting from Cell to char
     operator char() const;
 
+    //Operator '==' overloading for Cell class.
+    int operator==(char y) const;
+
     //----------------------------------
     // friend global IO operators
     //----------------------------------
@@ -40,9 +43,4 @@ public:
 
 //Operator '<<' overloading for Cell class.
 ostream& operator<< (ostream& os, Cell& c);
-
-// //Overloading operator '=' for Cell class. Returns the char in a certain cell.
-// char(Cell& c){
-//     return c.getValue();
-// }
 
