@@ -1,14 +1,12 @@
-CXX=clang++-5.0
+CXX=g++
 CXXFLAGS=-std=c++17
 
-make: main.cpp Board.o Cell.o OurException.o
-	$(CXX) $(CXXFLAGS) main.cpp *.o -o a.out 
-	valgrind --tool=memcheck ./a.out
+all: Board.o Cell.o OurException.o
 
 Board.o: Board.cpp Cell.cpp OurException.cpp Board.h Cell.h OurException.h
-	$(CXX) $(CXXFLAGS) -c Board.cpp -o Board.o
-	$(CXX) $(CXXFLAGS) -c Cell.cpp -o Cell.o
-	$(CXX) $(CXXFLAGS) -c OurException.cpp -o OurException.o
+	$(CXX) $(CXXFLAGS) --compile Board.cpp -o Board.o
+	$(CXX) $(CXXFLAGS) --compile Cell.cpp -o Cell.o
+	$(CXX) $(CXXFLAGS) --compile OurException.cpp -o OurException.o
 
 clean:
 	rm *.o a.out
