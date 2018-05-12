@@ -1,4 +1,4 @@
-CXX=g++
+CXX=clang++-5.0
 CXXFLAGS=-std=c++17
 
 all: Board.o Cell.o OurException.o
